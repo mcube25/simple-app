@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {RecordsService} from '../records.servie'
+import {RecordsService} from '../records.service'
 
 @Component({
   selector: 'app-textcomponent',
