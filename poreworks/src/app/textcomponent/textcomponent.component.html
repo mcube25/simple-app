@@ -1,4 +1,10 @@
 <p>it's sure,  Pureworks</p>
+<form #frm="ngForm" (ngSubmit)="updateInfo(frm)" >
+  <div class="">
+    <input type="text" name="location" value="" ngModel>
+    <button type="submit" name="button">add info</button>
+  </div>
+</form>
 <div class="container">
   <button type="button" name="button" (click)="getInfoFromSErviceClass1()">Employee</button>
   <ul>

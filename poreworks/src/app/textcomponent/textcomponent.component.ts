@@ -28,5 +28,7 @@ getInfoFromSErviceClass3(){
 
   ngOnInit(): void {
   }
-
+updateInfo(frm: any){
+  this.rservice.addInfo(frm.value.location)
+}
 }
