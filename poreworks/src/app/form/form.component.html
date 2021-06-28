@@ -1,10 +1,14 @@
 <p>form works!</p>
 <div class="container">
   <h2>user registration</h2>
-  <form class="" action="" (ngSubmit)="submit()">
+  <form #login="ngForm" class="" action="" (ngSubmit)="submit("Login")">
     <div class="form-group">
       <label for="firstname">First Name</label><br>
-      <input type="text" name="firstname" class="form-control" ngModel>
+      <input required minlength="2" maxlength="7" type="text" name="ngModel" class="form-control" ngModel>
+    </div>
+    <div *ngIf = "name.touched && name.invalid" class="alert alert-danger">
+      <p *ngIf ="name.errors.required">first name required</p>
+      <p *ngIf = "name.errors.minlength">sorry name too short</p>
     </div>
     <pre></pre>
     <div class="form-group">
@@ -24,3 +28,4 @@
     <button type="submit"  class="btn btn-primary">submit</button>
   </form>
 </div>
+/*ngModule provides form control for form input */
