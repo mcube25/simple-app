@@ -6,12 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TextcomponentComponent } from './textcomponent/textcomponent.component';
 import { FormComponent } from './form/form.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { IntroductionComponent } from './components/introduction/introduction.component';
+import { ContentComponent } from './components/content/content.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TextcomponentComponent,
-    FormComponent
+    FormComponent,
+    NavbarComponent,
+    IntroductionComponent,
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
