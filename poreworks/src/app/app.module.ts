@@ -10,16 +10,14 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './demorouting/login/login.component';
+import { HomeComponent } from './demorouting/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextcomponentComponent,
-    FormComponent,
-    NavbarComponent,
-    IntroductionComponent,
-    ContentComponent,
-    FooterComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
