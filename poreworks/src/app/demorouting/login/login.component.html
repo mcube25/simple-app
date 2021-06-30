@@ -1,0 +1,32 @@
+<div class="container">
+  <h2>user registration</h2>
+  <form #login="ngForm" class="" action="" (ngSubmit)="submit("Login")">
+    <div class="form-group">
+      <label for="firstname">First Name</label><br>
+      <input required minlength="2" maxlength="7" type="text" name="ngModel" class="form-control" ngModel>
+    </div>
+    <div *ngIf = "name.touched && name.invalid" class="alert alert-danger">
+      <p *ngIf ="name.errors.required">first name required</p>
+      <p *ngIf = "name.errors.minlength">sorry name too short</p>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="lastname">Last Name</label><br>
+      <input type="text" name="lastname" class="form-control" ngModel>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="email">Email</label><br>
+      <input type="text" name="email" class="form-control" ngModel>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="password">Password</label><br>
+      <input type="text" name="password" class="form-control" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="password">Forgot Password</label><br>
+      <input type="text" name="password" class="form-control" ngModel>
+    </div>
+    <button type="submit"  class="btn btn-primary">submit</button>
+</div>
